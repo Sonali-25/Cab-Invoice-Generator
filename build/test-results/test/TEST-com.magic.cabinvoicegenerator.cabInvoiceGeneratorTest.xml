@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.magic.cabinvoicegenerator.cabInvoiceGeneratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-15T17:09:12" hostname="DESKTOP-0RG9E2N" time="0.09">
+<testsuite name="com.magic.cabinvoicegenerator.cabInvoiceGeneratorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-06-15T17:41:57" hostname="DESKTOP-0RG9E2N" time="0.917">
   <properties/>
-  <testcase name="calculateFareTest()" classname="com.magic.cabinvoicegenerator.cabInvoiceGeneratorTest" time="0.09"/>
+  <testcase name="multipleRidesTest()" classname="com.magic.cabinvoicegenerator.cabInvoiceGeneratorTest" time="0.802"/>
+  <testcase name="calculateFareTest()" classname="com.magic.cabinvoicegenerator.cabInvoiceGeneratorTest" time="0.03"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
