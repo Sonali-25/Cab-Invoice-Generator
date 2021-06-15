@@ -1,0 +1,2 @@
+com/magic/cabinvoicegenerator/CabInvoiceGenerator.java
+ com.magic.cabinvoicegenerator.CabInvoiceGenerator
