@@ -1,5 +1,7 @@
 com/magic/cabinvoicegenerator/Rides.java
  com.magic.cabinvoicegenerator.Rides
+com/magic/cabinvoicegenerator/RideRepository.java
+ com.magic.cabinvoicegenerator.RideRepository
 com/magic/cabinvoicegenerator/CabInvoiceGenerator.java
  com.magic.cabinvoicegenerator.CabInvoiceGenerator
 com/magic/cabinvoicegenerator/InvoiceSummary.java

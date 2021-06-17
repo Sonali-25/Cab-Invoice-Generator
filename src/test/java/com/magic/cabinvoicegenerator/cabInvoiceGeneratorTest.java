@@ -34,8 +34,9 @@ public class cabInvoiceGeneratorTest {
         String userName = "Sonali" ;
         Rides[] ride = {new Rides(2.0 , 3),
                 new Rides(3.0, 4)} ;
-        invoiceService.addRide(userName, ride);
-        InvoiceSummary invoiceSummary = invoiceService.getInvoiceSummary(userName) ;
+        CabInvoiceGenerator invoice = new CabInvoiceGenerator();
+        invoice.addRide(userName, ride);
+        InvoiceSummary invoiceSummary = invoice.getInvoiceSummary(userName) ;
         InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 2*10+3+3*10+4) ;
         Assertions.assertEquals(expectedInvoiceSummary, invoiceSummary ) ;
     }

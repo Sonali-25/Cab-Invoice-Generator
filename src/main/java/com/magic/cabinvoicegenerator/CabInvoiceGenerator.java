@@ -3,6 +3,7 @@ package com.magic.cabinvoicegenerator;
 public class CabInvoiceGenerator {
     public static final int rate = 10;
     public static final int minimumFare = 5;
+    RideRepository rideRepository = new RideRepository();
     public static double calculateFare(double distance, int time){
         double totalFare = distance*rate+time;
         if (totalFare < 5)
@@ -25,5 +26,11 @@ public class CabInvoiceGenerator {
             totalFare += calculateFare(rides.distance,rides.time);
         }
         return new InvoiceSummary(ride.length , totalFare);
+    }
+    public void addRide(String userName, Rides[] ride) {
+        rideRepository.addRides(userName , ride ) ;
+    }
+    public InvoiceSummary getInvoiceSummary(String userName) {
+        return this.calculateMultipleRides(rideRepository.getRide(userName)) ;
     }
 }
